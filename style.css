@@ -1,0 +1,581 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.logo {
+    font-family: "Roboto Mono", monospace;
+    font-size: 2rem;
+    text-decoration: none;
+    color: green;
+    font-weight: 700;
+}
+
+.logo-span {
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 2.4rem;
+    color: black;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.nav-icon{
+    font-size: 1.5rem;
+}
+.navbar a:hover {
+    padding-bottom: 2px;
+    color: green;
+}
+
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bg-img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.home-contents {
+    position: absolute;
+    max-width: 50rem;
+    text-align: center;
+    line-height: 1.3;
+    left: 5%;
+    top: 35%;
+    
+}
+
+.home-title1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.home-title2 {
+    font-family: "Playwrite CU", cursive;
+    font-size: 50px;
+    margin-top: 15px;
+    color: rgb(3, 72, 3);
+}
+.home-button{
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    border: solid 1px green;
+    margin-top: 50px;
+    padding: 10px 20px;
+    color: green;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover{
+    background-color: green;
+    color: white;
+
+}
+
+#about {
+    height: 600px;
+    
+    background-color: rgb(232, 228, 228);
+
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding: 50px 0;
+}
+
+.about-body {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 30px;
+    align-items: center;
+
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img>img {
+    width: 100%;
+    height: 400px;
+
+}
+
+.img-head {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    font-size: 2rem;
+    mix-blend-mode: screen;
+    background-color: white;
+    text-align: center;
+}
+
+.about-content {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-contents h3 {
+    font-size: 2rem;
+    padding: 20px 0;
+    color: rgb(113, 108, 108);
+
+}
+
+.about-contents p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.about-contents a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: green;
+    border: solid 1px green;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 7px;
+    color: white;
+}
+
+.about-contents a:hover {
+    color: green;
+    background-color: transparent;
+}
+
+#categories {
+    margin-top: 30px;
+}
+
+.category-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.category-section {
+    width: 330px;
+    padding: 30px 20px;
+
+}
+
+.category-img {
+    cursor: pointer;
+    width: 100%;
+    height: 250px;
+
+}
+
+.section-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section-details {
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.category-img:hover {
+    transform: scale(1.05);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.box {
+    position: relative;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    margin: 10px 20px 0 20px;
+}
+
+.discount {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.3rem;
+    color: green;
+    background: rgba(0, 255, 0, .05);
+    border-radius: .5rem;
+    z-index: 1;
+}
+
+.box-img {
+    position: relative;
+    text-align: center;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.box-img img {
+    height: 22rem;
+}
+
+.box:hover .box-img img {
+    transform: scale(1.1);
+}
+
+.box-icons {
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box:hover .box-icons {
+    bottom: 0;
+}
+
+.box-icons a {
+    padding: 3px;
+    font-size: 2rem;
+    width: 50%;
+    background-color:black ;
+    color: white;
+}
+
+.box-icons .cart {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+
+}
+
+.box-icons a:hover {
+    background-color: rgb(4, 85, 4);
+}
+
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.2rem;
+
+}
+
+.content .price {
+    color: rgb(1, 73, 1);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.price span {
+    color: darkgray;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.review-box {
+    width: 600px;
+    height: auto;
+    padding: 2rem;
+    background-color:rgb(240, 240, 240) ;
+    border: 1px solid black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.stars i {
+    font-size: 1.7rem;
+    color: chocolate;
+}
+
+.review-box p {
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review-box span i {
+    
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: rgb(210, 201, 201);
+}
+
+.user-info h3 {
+    font-size: 1.6rem;
+}
+
+.user-info span {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #043927, #004526, #355E3B, #228B22);
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.child {
+    width: 350px;
+    height: 250px;
+    padding: 30px 50px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 25px;
+}
+
+#d1,#d2 {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#d3 a i{
+    font-size: 2rem;
+    color: white; 
+}
+#d3 a i:hover{
+    color: rgb(7, 193, 7);
+}
+
+
+#d1>a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+#d1>a:hover{
+    padding-left: 3px;
+}
+#d2>a {
+    text-decoration: none;
+    color: white;
+}
+#d2>a:hover{
+    padding-left: 3px;
+}
+.contact-p {
+    line-height: 1.5;
+}
+
+
+@media (max-width:1090px) {
+
+    .logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+
+    }
+}
+
+@media (max-width:768px) {
+    .icons {
+        display: flex;
+    }
+
+    #cancel {
+        display: none;
+    }
+
+    #check:checked~.icons #menu {
+        display: none;
+    }
+
+    #check:checked~.icons #cancel {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        background-color: gainsboro;
+        width: 100%;
+        left: 0;
+        display: none;
+    }
+
+    #check:checked~.navbar {
+        background-color: rgb(101, 180, 101);
+        display: block;
+        height: 24rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1rem;
+        margin: 1.1rem 0px;
+        text-align: center;
+    }
+
+    .home-contents {   
+        top: 25%;
+    }
+
+    .home-title1 {
+        font-size: 35px;
+    }
+
+    .home-title2 {
+        font-size: 35px;
+    }
+    .home-button{
+        font-size: 13px;
+        padding: 8px 15px;
+        margin-top: 35px;
+        
+    }
+    #about {
+        height: auto;
+    }
+
+    .about-body {
+        grid-template-columns: 1fr;
+    }
+    .img-head {
+        font-size: 1.6rem;
+    }
+
+    .review-box {
+        margin-top: 20px;
+    }
+    .child{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    
+}
+
+@media (max-width:450px){
+    .child{
+        width: 100%;
+    }
+    .user-info h3{
+        font-size: 1.2rem;
+    }
+    .user-info span{
+        font-size: 1.2rem;
+    }
+    .review-box span i{
+        font-size: 3rem;
+        right: 0;
+    }
+}

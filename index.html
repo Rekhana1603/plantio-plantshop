@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- boxicons cdn link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU:wght@100..400&family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <!-- animate style cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!-- navbar -->
+        <header class="header">
+            <a href="" class="logo">Plant<span class="logo-span">io</span></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <!-- menu icon -->
+                <i id="menu" class='bx bx-menu'></i>
+                <!-- close menu -->
+                <i id="cancel" class='bx bx-x'></i>
+    
+            </label>
+            <nav class="navbar">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#categories">CATEGORIES</a>
+                <a href="#products">PRODUCTS</a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="#footer">CONTACT</a>
+                <a href=""><i class='bx bxs-heart nav-icon'></i></a>
+                <a href=""><i class='bx bxs-cart nav-icon'></i></a>
+                <a href=""><i class='bx bxs-user nav-icon'></i></a>
+            </nav>
+        </header>
+        <!-- contents -->
+        <div class="page-contents">
+            <!-- home -->
+            <section id="home">
+                <img class="bg-img" src="./images/background.jpg" alt="">
+                <div class="home-contents">
+                    <h2 class="home-title1 animate__animated animate__fadeInDown" >Best Variety of</h2>
+                    <h1 class="home-title2 animate__animated animate__fadeInUp">Plants for Your House</h1>
+                    <a class="home-button animate__animated animate__zoomIn" href="#categories">GET STARTED</a>
+                </div>
+            </section>
+            <!-- about -->
+            <section id="about">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="main-heading">ABOUT US</h2>
+                <div data-aos="fade-up" data-aos-duration="1000" class="about-body">
+                    <div class="about-img">
+                        <img src="./images/about.jpg" alt="">
+                        <div class="img-head">
+                            <h3>Best Plant Sellers</h3>
+                        </div>
+                    </div>
+                    <div class="about-contents">
+                        <h3>Why choose us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus eos exercitationem hic
+                            ratione quibusdam! Quasi aspernatur nostrum vitae et sunt quas itaque quisquam accusantium.
+                            Minus dolore rem blanditiis quae.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolor hic, vero, aut
+                            eveniet laboriosam vel eaque ratione iure tempore, inventore porro nulla neque quas sint
+                            asperiores temporibus tempora amet!</p>
+                        <a href="">Learn more</a>
+                    </div>
+                </div>
+    
+            </section>
+            <!-- categories -->
+            <section id="categories">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="main-heading">CATEGORIES</h2>
+                <div data-aos="fade-up" data-aos-duration="1000" class="category-contents">
+    
+                    <div class="category-section">
+                        <img class="category-img" src="./images/succulents.jpg" alt="">
+                        <h3 class="section-heading">Succulents</h3>
+                        <p class="section-details">Buy the largest collection of cactus and succulents plants online. Our
+                            cactus and succulent plants are a true delight for the cactus c collectors.</p>
+                    </div>
+                    <div class="category-section">
+                        <img class="category-img" src="./images/bonsai.jpg" alt="">
+                        <h3 class="section-heading">Bonsai Plants</h3>
+                        <p class="section-details">Browse from a wide variety of bonsai plants which purify the air around
+                            you and creates a positive environment and help to reduce stress.</p>
+                    </div>
+    
+                    <div class="category-section">
+                        <img class="category-img" src="./images/floweringplant.jpg" alt="">
+                        <h3 class="section-heading">Flowering Plants</h3>
+                        <p class="section-details">Buy flowering plants, largest online nursery for flowering plants
+                            including all flowering plants, lilies n bulbous plants, orchids, plumeria plants.</p>
+                    </div>
+                    <div class="category-section">
+                        <img class="category-img" src="./images/creepers.jpg" alt="">
+                        <h3 class="section-heading">Creepers</h3>
+                        <p class="section-details">Opt for climbing plants as they add color to dull fences, walls or
+                            trellises, we are offering online services for buying climbers and creeper plants.</p>
+                    </div>
+    
+    
+                </div>
+            </section>
+            <!-- products -->
+            <section id="products">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="main-heading">FEATURED PRODUCTS</h2>
+                <div data-aos="fade-up" data-aos-duration="1000" class="box-container">
+    
+                    <div class="box">
+                        <span class="discount">-10%</span>
+                        <div class="box-img">
+                            <img src="./images/1.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Snake plant</h3>
+                            <div class="price"> $12.99 <span>$15.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-15%</span>
+                        <div class="box-img">
+                            <img src="./images/2.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Cereus</h3>
+                            <div class="price"> $15.99 <span>$18.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-5%</span>
+                        <div class="box-img">
+                            <img src="./images/3.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Bonsai olive</h3>
+                            <div class="price"> $13.99 <span>$15.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-18%</span>
+                        <div class="box-img">
+                            <img src="./images/4.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Parrot tulip</h3>
+                            <div class="price"> $15.99 <span>$18.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-20%</span>
+                        <div class="box-img">
+                            <img src="./images/5.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Green island fig</h3>
+                            <div class="price"> $12.99 <span>$19.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-9%</span>
+                        <div class="box-img">
+                            <img src="./images/6.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Common boxwood</h3>
+                            <div class="price"> $13.99 <span>$15.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-15%</span>
+                        <div class="box-img">
+                            <img src="./images/7.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Azalea</h3>
+                            <div class="price"> $12.99 <span>$18.99</span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span class="discount">-10%</span>
+                        <div class="box-img">
+                            <img src="./images/8.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Red star cordyline</h3>
+                            <div class="price"> $15.99 <span>$18.99</span></div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <span class="discount">-12%</span>
+                        <div class="box-img">
+                            <img src="./images/9.jpg" alt="">
+                            <div class="box-icons">
+                                <a href=""><i class='bx bxs-heart'></i></a>
+                                <a class="cart" href=""><i class='bx bxs-cart'></i></a>
+                                <a href=""><i class='bx bxs-share'></i></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Saffron corcus</h3>
+                            <div class="price"> $12.99 <span>$15.99</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- reviews -->
+            <section id="reviews">
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="main-heading">CUSTOMER REVIEWS</h2>
+                <div class="review-container">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="review-box">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque perspiciatis
+                            expedita, temporibus velit earum. Est numquam accusamus repellat ad non rerum sunt, modi enim
+                            autem animi quibusdam labore facere.</p>
+                        <div class="user">
+                            <img src="./images/review1.jpg" alt="">
+                            <div class="user-info">
+                                <h3>John Deo</h3>
+                                <span>Happy customer</span>
+                            </div>
+                        </div>
+                        <span><i class='bx bxs-quote-right'></i></span>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" class="review-box">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque perspiciatis
+                            expedita, temporibus velit earum. Est numquam accusamus repellat ad non rerum sunt, modi enim
+                            autem animi quibusdam labore facere.</p>
+                        <div class="user">
+                            <img src="./images/review2.jpg" alt="">
+                            <div class="user-info">
+                                <h3>Rebecca Luna</h3>
+                                <span>Happy customer</span>
+                            </div>
+                        </div>
+                        <span><i class='bx bxs-quote-right'></i></span>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer id="footer">
+                <div class="child">
+                    <a href="" class="logo">Plant<span class="logo-span">io</span></a>
+                </div>
+                <div class="child">
+    
+                    <h4> USEFUL LINKS</h4>
+                    <br>
+                    <div id="d1">
+                        <a href="">-About us</a>
+                        <br>
+                        <a href="">-Doc-Team</a>
+                        <br>
+                        <a href="">-Products</a>
+                        <br>
+                        <a href="">-Contact</a>
+                    </div>
+                </div>
+                <div class="child">
+                    <h4>QUICK LINKS</h4>
+                    <br>
+                    <div id="d2">
+                        <a href="">-Purchase</a>
+                        <br>
+                        <a href="">-Payment</a>
+                        <br>
+                        <a href="">-Return</a>
+                        <br>
+                        <a href="">-Shipping</a>
+                        <br>
+                    </div>
+                </div>
+                <div class="child">
+                    <h4>CONTACT INFO</h4>
+                    <br>
+                    <div id="d3">
+                        <P class="contact-p">121 King St, Melbourne VIC 3000</P>
+                        <P class="contact-p">plantioplantshop@gmail.com</P>
+                        <P class="contact-p">+(123)456 789 01</P>
+                        <a href=""><i class='bx bxl-facebook-square'></i></a>
+                        <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                        <a href=""><i class='bx bxl-twitter'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+            </footer>
+    
+        </div>
+    </div>
+</body>
+
+<!-- aos cdn script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
